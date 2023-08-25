@@ -3,8 +3,8 @@
 #include "lists.h"
 
 /**
- * add_node - adds a new node at the beginning of a linked list
- * @head: double pointer to the list_t list
+ * Add_Node - Add a New Node at the Beginning of a Linked List
+ * @head: Double Pointer To The List
  * @str: new string to add in the node
  *
  * Return: the address of the new element, or NULL if it fails
