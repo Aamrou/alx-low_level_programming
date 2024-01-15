@@ -1,0 +1,161 @@
+
+;; Function main (main, funcdef_no=6, decl_uid=2954, cgraph_uid=7, symbol_order=6)
+
+
+********** Local #1: **********
+
+	   Spilling non-eliminable hard regs: 6
+New elimination table:
+Can't eliminate 16 to 7 (offset=16, prev_offset=0)
+Can eliminate 16 to 6 (offset=16, prev_offset=0)
+Can't eliminate 19 to 7 (offset=0, prev_offset=0)
+Can eliminate 19 to 6 (offset=0, prev_offset=0)
+            alt=2: Bad operand -- refuse
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=3,overall=609,losers=1,rld_nregs=1
+          alt=4,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 4 in insn 5:  (0) r  (1) i {*movdi_internal}
+          alt=0,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 0 in insn 6:  (1) rBwBz {*call_value}
+            alt=2: Bad operand -- refuse
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=3,overall=609,losers=1,rld_nregs=1
+          alt=4,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 4 in insn 9:  (0) r  (1) i {*movdi_internal}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=1,overall=609,losers=1,rld_nregs=1
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=2,overall=609,losers=1,rld_nregs=1
+          alt=3,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 3 in insn 10:  (0) q  (1) n {*movqi_internal}
+          alt=0,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 0 in insn 11:  (1) rBwBz {*call_value}
+          alt=0,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 0 in insn 12:  (0) =r  (1) g {*movsi_internal}
+	   Spilling non-eliminable hard regs: 6
+
+********** Inheritance #1: **********
+
+EBB 2
+
+********** Pseudo live ranges #1: **********
+
+  BB 2
+   Insn 20: point = 0, n_alt = -1
+   Insn 19: point = 0, n_alt = -2
+   Insn 15: point = 1, n_alt = -2
+   Insn 12: point = 3, n_alt = 0
+   Insn 11: point = 4, n_alt = 0
+   Insn 10: point = 4, n_alt = 3
+   Insn 9: point = 4, n_alt = 4
+   Insn 8: point = 4, n_alt = -2
+   Insn 7: point = 5, n_alt = -2
+   Insn 6: point = 6, n_alt = 0
+   Insn 5: point = 6, n_alt = 4
+ r82: [4..5]
+ r83: [2..3]
+ r84: [0..1]
+Compressing live ranges: from 6 to 6 - 100%
+Ranges after the compression:
+ r82: [4..5]
+ r83: [2..3]
+ r84: [0..1]
+
+********** Assignment #1: **********
+
+
+********** Undoing inheritance #1: **********
+
+
+********** Local #2: **********
+
+	   Spilling non-eliminable hard regs: 6
+	   Spilling non-eliminable hard regs: 6
+New elimination table:
+Can't eliminate 16 to 7 (offset=16, prev_offset=0)
+Can eliminate 16 to 6 (offset=16, prev_offset=16)
+Can't eliminate 19 to 7 (offset=0, prev_offset=0)
+Can eliminate 19 to 6 (offset=0, prev_offset=0)
+changing reg in insn 7
+changing reg in insn 8
+changing reg in insn 12
+changing reg in insn 15
+changing reg in insn 15
+changing reg in insn 19
+deleting insn with uid = 7.
+deleting insn with uid = 15.
+deleting insn with uid = 19.
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+main
+
+Dataflow summary:
+;;  invalidated by call 	 0 [ax] 1 [dx] 2 [cx] 4 [si] 5 [di] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 20 [xmm0] 21 [xmm1] 22 [xmm2] 23 [xmm3] 24 [xmm4] 25 [xmm5] 26 [xmm6] 27 [xmm7] 28 [mm0] 29 [mm1] 30 [mm2] 31 [mm3] 32 [mm4] 33 [mm5] 34 [mm6] 35 [mm7] 36 [r8] 37 [r9] 38 [r10] 39 [r11] 44 [xmm8] 45 [xmm9] 46 [xmm10] 47 [xmm11] 48 [xmm12] 49 [xmm13] 50 [xmm14] 51 [xmm15] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 []
+;;  hardware regs used 	
+;;  regular block artificial uses 	 6 [bp] 7 [sp]
+;;  eh block artificial uses 	 6 [bp] 7 [sp] 16 [argp] 19 [frame]
+;;  entry block defs 	 0 [ax] 1 [dx] 2 [cx] 4 [si] 5 [di] 6 [bp] 7 [sp] 19 [frame] 20 [xmm0] 21 [xmm1] 22 [xmm2] 23 [xmm3] 24 [xmm4] 25 [xmm5] 26 [xmm6] 27 [xmm7] 36 [r8] 37 [r9]
+;;  exit block uses 	 0 [ax] 6 [bp] 7 [sp] 19 [frame]
+;;  regs ever live 	 0 [ax] 4 [si] 5 [di] 6 [bp] 7 [sp]
+;;  ref usage 	r0={5d,4u} r1={3d} r2={3d} r4={4d,1u} r5={5d,2u} r6={1d,2u} r7={1d,4u} r8={2d} r9={2d} r10={2d} r11={2d} r12={2d} r13={2d} r14={2d} r15={2d} r17={2d} r18={2d} r19={1d,1u} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={2d} r29={2d} r30={2d} r31={2d} r32={2d} r33={2d} r34={2d} r35={2d} r36={3d} r37={3d} r38={2d} r39={2d} r44={2d} r45={2d} r46={2d} r47={2d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} 
+;;    total ref usage 171{157d,14u,0e} in 8{6 regular + 2 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+;; basic block 2, loop depth 0, maybe hot
+;;  prev block 0, next block 1, flags: (RTL, MODIFIED)
+;;  pred:       ENTRY (FALLTHRU)
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(6){ }u-1(7){ }}
+;; lr  in  	 6 [bp] 7 [sp] 16 [argp] 19 [frame]
+;; lr  use 	 6 [bp] 7 [sp] 16 [argp] 19 [frame]
+;; lr  def 	 0 [ax] 1 [dx] 2 [cx] 4 [si] 5 [di] 8 [st] 9 [st(1)] 10 [st(2)] 11 [st(3)] 12 [st(4)] 13 [st(5)] 14 [st(6)] 15 [st(7)] 17 [flags] 18 [fpsr] 20 [xmm0] 21 [xmm1] 22 [xmm2] 23 [xmm3] 24 [xmm4] 25 [xmm5] 26 [xmm6] 27 [xmm7] 28 [mm0] 29 [mm1] 30 [mm2] 31 [mm3] 32 [mm4] 33 [mm5] 34 [mm6] 35 [mm7] 36 [r8] 37 [r9] 38 [r10] 39 [r11] 44 [xmm8] 45 [xmm9] 46 [xmm10] 47 [xmm11] 48 [xmm12] 49 [xmm13] 50 [xmm14] 51 [xmm15] 52 [] 53 [] 54 [] 55 [] 56 [] 57 [] 58 [] 59 [] 60 [] 61 [] 62 [] 63 [] 64 [] 65 [] 66 [] 67 [] 68 [] 69 [] 70 [] 71 [] 72 [] 73 [] 74 [] 75 [] 82 83 84
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7fdaf2f08120 *.LC0>)) "0-main.c":11:5 66 {*movdi_internal}
+     (nil))
+(call_insn 6 5 8 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_strlen") [flags 0x41]  <function_decl 0x7fdaf2edf400 _strlen>) [0 _strlen S1 A8])
+            (const_int 0 [0]))) "0-main.c":11:5 677 {*call_value}
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 8 6 9 2 (set (reg:SI 4 si)
+        (reg:SI 0 ax [orig:82 _1 ] [82])) "0-main.c":11:5 67 {*movsi_internal}
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7fdaf2f081b0 *.LC1>)) "0-main.c":11:5 66 {*movdi_internal}
+     (nil))
+(insn 10 9 11 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "0-main.c":11:5 69 {*movqi_internal}
+     (nil))
+(call_insn 11 10 12 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fdaf2de0a00 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) "0-main.c":11:5 677 {*call_value}
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 12 11 20 2 (set (reg:SI 0 ax [orig:83 _5 ] [83])
+        (const_int 0 [0])) "0-main.c":12:12 67 {*movsi_internal}
+     (nil))
+(insn 20 12 22 2 (use (reg/i:SI 0 ax)) "0-main.c":13:1 -1
+     (nil))
+;;  succ:       EXIT [always]  (FALLTHRU)
+;; lr  out 	 0 [ax] 6 [bp] 7 [sp] 16 [argp] 19 [frame]
+
+(note 22 20 0 NOTE_INSN_DELETED)
